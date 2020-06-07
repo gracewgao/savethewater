@@ -1,0 +1,120 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Images/background.jpg");
+  background-size: cover;
+  background-position: 20% 70%;
+  color: #043C5B;
+  display: flex;
+}
+
+h1 {
+  margin-top:3%;
+  text-transform: uppercase;
+  font-family: 'Podkova', serif;
+  font-size: 96px;
+  margin-bottom: 5%;
+}
+
+table {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400px;
+  margin-left: 3.8%;
+  margin-right: 3%;
+}
+
+.text1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400px;
+  margin-left: 4%;
+  width: 625px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
+.bubble {
+  background-color: #FFECE9;
+  padding: 4%;
+  border-radius: 9px;
+  width: 1000px;
+  box-shadow: 30px 30px #043C5B;
+}
+
+#CTA {
+  margin-top: 5%;
+  padding: 2.5%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  font-size: 24px;
+  background-color: #FE8470;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: #FFECE9;
+  border-radius: 3px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+#CTA:hover {
+  background-color: #E75E47;
+}
+
+#SKIP {
+  margin-left: 3%;
+  padding: 2%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  border-color: #043C5B;
+  font-size: 24px;
+  background-color: inherit;
+  border-width: 2px;
+  font-family: 'Poppins', sans-serif;
+  color: inherit;
+  border-radius: 3px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  transition: 0.3s;
+  margin-bottom: 5%;
+}
+
+#SKIP:hover {
+  background-color: #B2C8D1;
+  color: #022031;
+}

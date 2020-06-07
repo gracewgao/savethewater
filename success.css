@@ -1,0 +1,153 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Images/background.jpg");
+  background-size: cover;
+  background-position: 20% 70%;
+  color: #043C5B;
+  display: flex;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Podkova', serif;
+  font-size: 96px;
+  margin-bottom: 3%;
+  margin-top:0;
+}
+
+#table1 {
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400px;
+  margin-left: 4%;
+  width: 700px;
+}
+
+.text1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400px;
+  margin-left: 4%;
+  width: 700px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end 7;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
+.bubble {
+  background-color: #FFECE9;
+  padding: 4%;
+  padding-top: 2%;
+  border-radius: 9px;
+  width: 1325px;
+  box-shadow: 30px 30px #043C5B
+}
+
+#CTA {
+  padding: 8%;
+  padding-left: 7%;
+  padding-right: 7%;
+  font-size: 24px;
+  background-color: #FE8470;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: #FFECE9;
+  border-radius: 3px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+#CTA:hover {
+  background-color: #E75E47;
+}
+
+#CTA2 {
+  padding: 8%;
+  padding-left: 7%;
+  padding-right: 7%;
+  font-size: 24px;
+  background-color: #043C5B;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: #FFECE9;
+  border-radius: 3px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+#CTA2:hover {
+  background-color: #022233;
+}
+
+#SKIP {
+  margin-left: 8%;
+  padding: 4.2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-color: #043C5B;
+  font-size: 24px;
+  background-color: inherit;
+  border-width: 2px;
+  font-family: 'Poppins', sans-serif;
+  color: inherit;
+  border-radius: 3px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+#replaytext {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0;
+}
+
+#SKIP:hover {
+  background-color: #B2C8D1;
+  color: #022031;
+}
+
+#sigh {
+  margin-left: 10%;
+}
+
+audio {
+  margin-left: 20%;
+}

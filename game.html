@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <title>Save the Water!</title>
+  <link rel="icon" href="Images/icon.png">
+  <link rel="stylesheet" type="text/css" href="game.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!--An invisble div to retrieve the images of the game-->
+  <div id="images">
+    <img src="Images/character.png" id="character">
+    <img src="Images/charactercrouch.png" id="crouch">
+    <img src="Images/characterjump.png" id="jump">
+    <!--Obstacle images-->
+    <img src="Images/tumbleweed.png" id="tumbleweed">
+    <img src="Images/bird.png" id="bird">
+    <img src="Images/bird2.png" id="bird2">
+
+    <!--house image for the end of a Level-->
+    <img src="Images/house.png" id="house">
+  </div>
+
+  <div>
+
+    <table class="w-100" style="position:absolute; z-index:2;">
+      <tr>
+        <td>
+
+          <div class="bubble">
+            <p class="text temperature"></p>
+            <p class="text distance"></p>
+            <strong>
+              <p class="text water"></p>
+            </strong>
+          </div>
+
+          <!--Health bar-->
+          <div style="z-index: 3;">
+            <div class="area">
+              <div class="total"></div>
+              <div class="health-box">
+                <div class="health-bar-red"></div>
+                <div class="health-bar-blue"></div>
+                <div class="health-bar"></div>
+                <div class="health-bar-text"></div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <audio controls autoplay style="margin-top:5%;">
+            <source src="Sound/gameMusic.mp3" type="audio/mpeg">
+          </audio>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="container" style="z-index:1">
+    <div class="row">
+      <!--The canvas will be where the game is played-->
+      <canvas class="col-12 p-0" id="canvas"></canvas>
+    </div>
+  </div>
+  </div>
+
+  <script src="runningGame.js"></script>
+</body>
+
+</html>
